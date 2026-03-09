@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Pradeepthi Portfolio</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:black;
+color:white;
+}
+
+/* PARTICLES BACKGROUND */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:black;
+border-bottom:1px solid white;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gray;
+}
+
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero img{
+width:160px;
+border-radius:50%;
+border:3px solid white;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.typing{
+font-size:22px;
+color:gray;
+margin-top:10px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+border:1px solid white;
+color:white;
+text-decoration:none;
+transition:0.4s;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+}
+
+h2{
+margin-bottom:30px;
+font-size:28px;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.project{
+padding:20px;
+border:1px solid white;
+border-radius:10px;
+transition:0.4s;
+transform-style:preserve-3d;
+}
+
+.project:hover{
+transform:rotateY(10deg) rotateX(10deg) scale(1.05);
+background:white;
+color:black;
+}
+
+
+
+/* SKILLS */
+
+.skills span{
+display:inline-block;
+border:1px solid white;
+padding:8px 15px;
+margin:6px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.skills span:hover{
+background:white;
+color:black;
+}
+
+/* CONTACT */
+
+.social{
+margin-top:20px;
+font-size:30px;
+}
+
+.social a{
+color:white;
+margin-right:20px;
+transition:0.3s;
+}
+
+.social a:hover{
+color:gray;
+}
+
+/* DARK TOGGLE */
+
+.toggle{
+position:fixed;
+right:20px;
+bottom:20px;
+cursor:pointer;
+background:white;
+color:black;
+padding:10px 15px;
+border-radius:20px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:40px;
+height:40px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid white;
+}
+
+.logo span{
+font-weight:bold;
+font-size:18px;
+}
+
+h3 i{
+margin-right:10px;
+color:#00e6ff;
+font-size:18px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+
+<nav>
+<div class="logo">
+<img src="profile.jpg" alt="Pradeepthi">
+<span>Munganda Pradeepthi</span>
+</div>
+
+<div>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+<a href="#robotics">AI & Robotics</a>
+<a href="#experience">Experience</a>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<!-- <img src="profile.jpg" alt="Pradeepthi profile"> -->
+
+<h1>Munganda Pradeepthi</h1>
+
+<div class="typing">
+<span id="typing"></span>
+</div>
+
+<a href="MP_(Resume).pdf" download class="btn">
+Download Resume
+</a>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Tech enthusiastic and motivated Computer Science student specializing in Artificial Intelligence and Machine Learning. 
+Passionate about developing intelligent systems, mobile applications, and data-driven solutions that solve real-world problems.
+
+Strong interest in robotics, embedded systems, and automation technologies. Experienced in building AI models, 
+mobile applications using React Native, and implementing machine learning algorithms for security, healthcare, and 
+intelligent transportation systems.
+
+Enjoy experimenting with sensors, robotics projects, and integrating hardware with software to build smart systems. 
+Continuously exploring new technologies in AI, deep learning, and robotics to create innovative and impactful solutions.
+</p>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3><i class="fas fa-lock"></i> Secure Information Retrieval System</h3>
+<p>ML system using Isolation Forest and Grey Wolf Optimization for secure query processing.</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-shield-halved"></i> DDoS Detection Model</h3>
+<p>Semi-supervised ML model for detecting Distributed Denial of Service attacks.</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-brain"></i> Brain Tissue Segmentation</h3>
+<p>Medical image segmentation using PSO and Hummingbird Optimization.</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-user-check"></i> AI Attendance System</h3>
+<p>Face recognition attendance system with face mask detection.</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-car"></i> AVOD Object Detection</h3>
+<p>Hybrid model integrating Faster R-CNN and YOLO for road object detection.</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-chart-line"></i> Traffic Prediction System</h3>
+<p>Machine learning model for intelligent transport traffic prediction.</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-crosshairs"></i> Aim Trainer Game</h3>
+<p>Python based AI game designed for improving shooting target accuracy.</p>
+</div>
+
+</div>
+
+<!-- AI & ROBOTICS -->
+
+<section id="robotics">
+
+<h2>AI & ROBOTICS</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3><i class="fas fa-person-walking"></i> Human Following Robot</h3>
+<p>
+Autonomous robot capable of detecting and following a human using sensors and microcontroller-based navigation.
+</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-volume-high"></i> Sound Based Car Controller</h3>
+<p>
+Robot car that moves based on sound commands using sound sensors and Arduino-based motor control.
+</p>
+</div>
+
+<div class="project">
+<h3><i class="fas fa-satellite-dish"></i> Bluetooth Controlled Car</h3>
+<p>
+Mobile controlled robotic car using Bluetooth module and smartphone commands for movement control.
+</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+<!-- Experience -->
+<section id="experience">
+
+<h2>Work & Internship Experience</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3><i class="fas fa-robot"></i> Lead STEM Engineer</h3>
+
+<p>
+Company: STEMX <br>
+Role: Lead STEM Engineer <br>
+Duration: Oct – Present
+</p>
+
+<p>
+Conduct robotics and STEM training programs, guide students in building
+robotics projects, automation systems, and innovative technology solutions.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3><i class="fas fa-mobile-screen-button"></i> Mobile App Developer Intern</h3>
+
+<p>
+Company: MH-Cognition <br>
+Duration: Jan – June
+</p>
+
+<p>
+Developed mobile application features using React Native, integrated APIs,
+and contributed to building scalable mobile solutions.
+</p>
+<hr>
+
+</div>
+
+<div class="project">
+
+<h3><i class="fas fa-database"></i> Data Mining Intern</h3>
+
+<p>
+Company: CK & Sons Textiles <br>
+Duration: July – August
+</p>
+
+<p>
+Worked on data analysis and mining techniques to extract useful insights
+from business data and improve decision making.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Python</span>
+<span>React Native</span>
+<span>Django</span>
+<span>Machine Learning</span>
+<span>Deep Learning</span>
+<span>MySQL</span>
+<span>Web Developer</span>
+<span>Frontend developer</span>
+<span>Flutter</span>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: pradeepthi2004@gmail.com</p>
+
+<div class="social">
+
+<a href="mailto:pradeepthi2004@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="https://github.com/mungandapradeepthi" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/munganda-pradeepthi-a4b615255/" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+</div>
+
+</section>
+
+<div class="toggle" onclick="toggleTheme()">Light Mode</div>
+
+<script>
+
+/* typing animation */
+
+const text = ["AI Engineer", "Machine Learning Developer", "Software Developer"];
+let i=0;
+let j=0;
+let current="";
+let isDeleting=false;
+
+function type(){
+
+current = text[i];
+
+if(isDeleting){
+document.getElementById("typing").textContent=current.substring(0,j--);
+if(j<0){
+isDeleting=false;
+i=(i+1)%text.length;
+}
+}
+
+else{
+document.getElementById("typing").textContent=current.substring(0,j++);
+if(j>current.length){
+isDeleting=true;
+setTimeout(type,1000);
+return;
+}
+}
+
+setTimeout(type,120);
+}
+
+type();
+
+/* particles */
+
+function loadParticles(color){
+
+particlesJS("particles-js",{
+particles:{
+number:{value:80},
+color:{value:color},
+shape:{type:"circle"},
+opacity:{value:0.5},
+size:{value:3},
+line_linked:{
+enable:true,
+distance:150,
+color:color,
+opacity:0.4
+},
+move:{enable:true,speed:2}
+}
+});
+
+}
+
+/* theme toggle */
+
+function toggleTheme(){
+
+if(document.body.style.background=="white"){
+
+document.body.style.background="black";
+document.body.style.color="white";
+
+loadParticles("#ffffff");
+
+}
+
+else{
+
+document.body.style.background="white";
+document.body.style.color="black";
+
+loadParticles("#000000");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
